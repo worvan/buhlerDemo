@@ -1,1 +1,7 @@
-<p>overview works!</p>
+<div class="machine-container">
+  <div *ngFor="let machine of machineArray; index as i" [ngClass]="getClassByStatus(machine.machineStatus)" (click)="onCycleStatus(machine.id)"> {{ machine.machineName }}
+    <div *ngIf="machine.machineStatus === MACHINE_STATUS.RUNNING" class="material-icons">check_circle_outline</div>
+    <div *ngIf="machine.machineStatus === MACHINE_STATUS.WARNING" class="material-icons">warning</div>
+    <div *ngIf="machine.machineStatus === MACHINE_STATUS.ALARM" class="material-icons">error_outline</div>
+  </div>
+</div>

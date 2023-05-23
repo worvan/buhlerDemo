@@ -1,9 +1,12 @@
 <div class="row">
   <img class="col logo" src="assets/Logo_Bühler_AG.svg.png">
   <div class="col void"></div>
-  <div class=" col time">Time</div>
-  <div class="col user">User</div>
+  <div class=" col time">
+    <span class="material-icons">schedule</span>
+    {{ displayTime | date: ' dd.MM.YYYY hh:mm' }}
+  </div>
+  <div class="col user"><span class="material-icons">account_circle</span> Operator</div>
 </div>
-<app-overview></app-overview>
-<app-machine-status></app-machine-status>
+<app-overview [machineArray]="machineArray"></app-overview>
+<app-machine-status [machineArray]="machineArray" ></app-machine-status>
 

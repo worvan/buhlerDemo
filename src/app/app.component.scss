@@ -1,13 +1,24 @@
 $logo-width: 20%;
 
 .row {
-  width: 100%;
   display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 1em;
+  border-bottom: 5px solid #009e8e;
+  background-color: #dadadb;
 
   .col {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
     min-width: 25%;
-    text-align: center;
+
+    .material-icons {
+      padding-right: 1em;
+    }
   }
+
   .logo {
     min-width: $logo-width;
   }

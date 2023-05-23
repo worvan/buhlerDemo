@@ -1,0 +1,17 @@
+.machine-container {
+  display: flex;
+  background-color: #dadadb;
+
+  .machine-item {
+    position: relative;
+    font-weight: bold;
+    padding: 2em 3em;
+    justify-content: center;
+
+    .material-icons {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+  }
+}
