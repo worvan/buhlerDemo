@@ -1,0 +1,14 @@
+$logo-width: 20%;
+
+.row {
+  width: 100%;
+  display: flex;
+
+  .col {
+    min-width: 25%;
+    text-align: center;
+  }
+  .logo {
+    min-width: $logo-width;
+  }
+}

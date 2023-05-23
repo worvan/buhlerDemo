@@ -1,0 +1,19 @@
+/*typography and global styles*/
+
+* {
+  box-sizing: border-box;
+  border: 1px solid rgba(255,0,0,0.1); //debug
+}
+
+$logo-color: #009e8e;
+
+.warning {
+  color: #FFFFFF;
+  background-color: #fd9605;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
